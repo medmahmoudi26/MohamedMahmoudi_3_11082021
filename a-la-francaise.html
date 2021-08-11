@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>ohmyfood - À la Française</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/949298e37f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html">
+            <span class="back-to-homepage">
+                <i role="img" class="fas fa-arrow-left" aria-hidden="true"></i>
+            </span>
+            <span class="logo">ohmyfood</span>
+        </a>
+    </header>
+
+    <main>
+        <header class="restaurant-header">
+            <img aria-hidden="true" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
+            <div class="title">
+                <h1 id="main-content">À la Française</h1>
+                <div class="like-button">
+                    <input id="a-la-francaise" type="checkbox" value="a-la-francaise" />
+                    <label for="a-la-francaise">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <form class="menu-select" method="POST">
+            <h2>Entrées</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="tartare-de-poulpe" type="checkbox" value="tartare-de-poulpe"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Tartare de poulpe acidulé
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Aux zestes d'orange
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">25€</span>
+                        <label class="select-button" for="tartare-de-poulpe">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="veloute-de-legumes" type="checkbox" value="veloute-de-legumes"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Velouté de légumes d'antan
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Carotte, panais, topinambour
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="veloute-de-legumes">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="soupe-a-l-oignon" type="checkbox" value="soupe-a-l-oignon"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Soupe à l'oignon
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">20€</span>
+                        <label class="select-button" for="soupe-a-l-oignon">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Plats</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="coquilles-saint-jacques" type="checkbox"
+                        value="coquilles-saint-jacques" name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Coquilles Saint-Jacques
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">40€</span>
+                        <label class="select-button" for="coquilles-saint-jacques">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="magret-de-canard" type="checkbox" value="magret-de-canard"
+                        name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Magret de canard
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="magret-de-canard">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="pigeonneau" type="checkbox" value="pigeonneau" name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Pigeonneau d’Ille-et-Vilaine
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">44€</span>
+                        <label class="select-button" for="pigeonneau">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Desserts</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="petales-de-violettes-glaces" type="checkbox"
+                        value="petales-de-violettes-glaces" name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Pétales de violettes glacés
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">18€</span>
+                        <label class="select-button" for="petales-de-violettes-glaces">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="fondant-au-chocolat" type="checkbox" value="fondant-au-chocolat"
+                        name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Fondant au chocolat
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">22€</span>
+                        <label class="select-button" for="fondant-au-chocolat">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="millefeuille-croustillant" type="checkbox"
+                        value="millefeuille-croustillant" name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Millefeuille croustillant
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Myrtilles et pâte d’amande</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">23€</span>
+                        <label class="select-button" for="millefeuille-croustillant">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <button class="button">Commander</button>
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <h2>ohmyfood</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

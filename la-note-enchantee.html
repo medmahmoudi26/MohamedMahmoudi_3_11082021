@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>ohmyfood - La Note Enchantée</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/949298e37f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html">
+            <span class="back-to-homepage">
+                <i role="img" class="fas fa-arrow-left" aria-hidden="true"></i>
+            </span>
+            <span class="logo">ohmyfood</span>
+        </a>
+    </header>
+
+    <main>
+        <header class="restaurant-header">
+            <img aria-hidden="true" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
+            <div class="title">
+                <h1 id="main-content">La Note Enchantée</h1>
+                <div class="like-button">
+                    <input id="note-enchantee" type="checkbox" value="note-enchantee" />
+                    <label for="note-enchantee">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <form class="menu-select" method="POST">
+            <h2>Entrées</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="ravioles-de-foie-gras" type="checkbox"
+                        value="ravioles-de-foie-gras" name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Ravioles de foie gras
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Accompagnés de leur crème à la truffe
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">25€</span>
+                        <label class="select-button" for="ravioles-de-foie-gras">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="caviar-oscietre" type="checkbox" value="caviar-oscietre"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Caviar osciètre
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Sur blini à la farine de blé noir
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="caviar-oscietre">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="homard-et-espuma" type="checkbox" value="homard-et-espuma"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Homard et espuma de potiron
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Mariné aux zestes d'orange
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">20€</span>
+                        <label class="select-button" for="homard-et-espuma">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="foie-gras-de-canard" type="checkbox" value="foie-gras-de-canard"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Foie gras de canard cuit entier
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Confiture de figue et pain toasté
+
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="foie-gras-de-canard">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Plats</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="noix-de-coquilles-saint-jacques" type="checkbox"
+                        value="noix-de-coquilles-saint-jacques" name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Noix de coquilles Saint-Jacques
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Sur lit de purée de céleri-rave
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">40€</span>
+                        <label class="select-button" for="noix-de-coquilles-saint-jacques">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="langoustine-poelee" type="checkbox" value="langoustine-poelee"
+                        name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Langoustine poêlée
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Purée de patate douce
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="langoustine-poelee">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="mijote-de-queue-de-boeuf" type="checkbox"
+                        value="mijote-de-queue-de-boeuf" name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Mijoté de queue de boeuf
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et riz sauvage aux zestes de citron
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">44€</span>
+                        <label class="select-button" for="mijote-de-queue-de-boeuf">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Desserts</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="macaron-noisette-chocolat" type="checkbox"
+                        value="macaron-noisette-chocolat" name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Macaron noisette et chocolat
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Glace au caramel brun et sel de Guérande
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">18€</span>
+                        <label class="select-button" for="macaron-noisette-chocolat">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="baba-au-rhum" type="checkbox" value="baba-au-rhum"
+                        name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Baba au rhum revisité
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Avec son coulis de citron
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">22€</span>
+                        <label class="select-button" for="baba-au-rhum">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="tarte-au-citron-meringuee" type="checkbox"
+                        value="tarte-au-citron-meringuee" name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Tarte au citron meringuée
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Déstructurée
+                        </p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">23€</span>
+                        <label class="select-button" for="tarte-au-citron-meringuee">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <button class="button">Commander</button>
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <h2>ohmyfood</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>
+        ohmyfood - Réservez votre menu
+    </title>
+
+    <base href="index.html" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/949298e37f.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="title" content="ohmyfood" />
+    <meta name="description" content="Réservez Votre menu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="loader-container">
+        <span class="search-icon">
+        </span>
+    </div>
+    <header class="page-header">
+        <div class="loader-container">
+            <span class="search-icon">
+                <i class="fas fa-redo-alt loader" aria-hidden="true"></i>
+            </span>
+        </div>
+        <a href="index.html">
+            <span class="logo">
+                ohmyfood
+            </span>
+        </a>
+    </header>
+
+    <main id="main-content">
+
+        <form class="location">
+            <span class="map-icon">
+                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+            </span>
+            <button type="submit">
+                <span class="search-icon">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span class="visually-hidden">Lancer une recherche par lieux</span>
+                </span>
+            </button>
+            <input type="search" name="ville" aria-label="Entrez le nom d'une ville" autocomplete="on"
+                placeholder="Paris, Belleville">
+        </form>
+
+        <header class="cover section--highlighted">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants-list" class="button" title="Page référencant la liste de nos restaurants partenaires">
+                Explorer nos restaurants
+            </a>
+        </header>
+
+        <section class="steps">
+            <h2>Fonctionnement</h2>
+            <ol>
+                <li class="card card--step">
+                    <i class="fas fa-mobile-alt step__icon" aria-hidden="true"></i>
+                    <span class="step__label">Choisissez un restaurant</span>
+                </li>
+                <li class="card card--step">
+                    <i class="fas fa-list-ul step__icon" aria-hidden="true"></i>
+                    <span class="step__label">Composez votre menu</span>
+                </li>
+                <li class="card card--step highlighted">
+                    <i class="fas fa-store step__icon" aria-hidden="true"></i>
+                    <span class="step__label">Dégustez au restaurant</span>
+                </li>
+            </ol>
+        </section>
+
+        <section id="restaurants-list" class="restaurants-list section--highlighted">
+            <h2>Restaurants</h2>
+
+            <article class="card">
+                <a href="la-palette-du-gout.html" title="Naviguer vers la page 'La palette du goût'">
+                    <div class="image-container">
+                        <img aria-hidden="true" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="card-label">
+                        <div class="card-label__title">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                    </div>
+                    <span class="new-label">Nouveau</span>
+                </a>
+                <div class="like-button">
+                    <input id="palette-menilmontant" type="checkbox" value="palette-menilmontant">
+                    <label for="palette-menilmontant">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </article>
+
+            <article class="card">
+                <a href="la-note-enchantee.html" title="Naviguer vers la page 'La note enchantée'">
+                    <div class="image-container">
+                        <img aria-hidden="true" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                    </div>
+                    <div class="card-label">
+                        <div class="card-label__title">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                    </div>
+                    <span class="new-label">Nouveau</span>
+                </a>
+                <div class="like-button">
+                    <input id="note-charonne" type="checkbox" value="note-charonne">
+                    <label for="note-charonne">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </article>
+
+            <article class="card">
+                <a href="a-la-francaise.html" title="Naviguer vers la page 'Hôtel du port'">
+                    <div class="image-container">
+                        <img aria-hidden="true" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                    </div>
+                    <div class="card-label">
+                        <div class="card-label__title">
+                            <h3>À la française</h3>
+                            <p>Cité rouge</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="like-button">
+                    <input id="francaise-cite" type="checkbox" value="francaise-cite">
+                    <label for="francaise-cite">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </article>
+
+            <article class="card">
+                <a href="le-delice-des-sens.html" title="Naviguer vers la page 'Hôtel du port'">
+                    <div class="image-container">
+                        <img aria-hidden="true"
+                            src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                    </div>
+                    <div class="card-label">
+                        <div class="card-label__title">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="like-button">
+                    <input id="delice-folie" type="checkbox" value="delice-folie">
+                    <label for="delice-folie">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <h2>ohmyfood</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</body>
+
+</html>

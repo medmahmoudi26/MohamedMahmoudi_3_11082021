@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>ohmyfood - Le Délice des Sens</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script src="https://kit.fontawesome.com/949298e37f.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="page-header">
+        <a href="index.html">
+            <span class="back-to-homepage">
+                <i role="img" class="fas fa-arrow-left" aria-hidden="true"></i>
+            </span>
+            <span class="logo">ohmyfood</span>
+        </a>
+    </header>
+
+    <main>
+        <header class="restaurant-header">
+            <img aria-hidden="true" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" />
+            <div class="title">
+                <h1 id="main-content">Le délice des sens</h1>
+                <div class="like-button">
+                    <input id="delice-des-sens" type="checkbox" value="delice-des-sens" />
+                    <label for="delice-des-sens">
+                        <i role="img" aria-hidden="true" class="fas fa-heart"></i>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <form class="menu-select" method="POST">
+            <h2>Entrées</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="tartare-de-thon" type="checkbox" value="tartare-de-thon"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Tartare de thon
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Assaisonné au yuzu</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">25€</span>
+                        <label class="select-button" for="tartare-de-thon">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="bouchee-de-homard" type="checkbox" value="bouchee-de-homard"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Bouchée de homard croustillant
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et sa farandole de petits légumes</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="bouchee-de-homard">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="veloute-de-cepes" type="checkbox" value="veloute-de-cepes"
+                        name="entrees" />
+                    <div class="card-label__title">
+                        <h3>
+                            Velouté de cèpes
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Aux truffes</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">20€</span>
+                        <label class="select-button" for="veloute-de-cepes">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Plats</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="poulet-roti" type="checkbox" value="poulet-roti" name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Poulet rôti aux herbes de Provence
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et sa crème de truffe</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">40€</span>
+                        <label class="select-button" for="poulet-roti">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="langouste-rotie" type="checkbox" value="langouste-rotie"
+                        name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Langouste rôtie
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et ses légumes de saison</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">35€</span>
+                        <label class="select-button" for="langouste-rotie">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="cote-de-boeuf-angus" type="checkbox" value="cote-de-boeuf-angus"
+                        name="plats" />
+                    <div class="card-label__title">
+                        <h3>
+                            Côte de boeuf Angus
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Et sa purée de panais</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">44€</span>
+                        <label class="select-button" for="cote-de-boeuf-angus">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <h2>Desserts</h2>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="farandole-de-dessert" type="checkbox" value="farandole-de-dessert"
+                        name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Farandole de desserts
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Du chef</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">18€</span>
+                        <label class="select-button" for="farandole-de-dessert">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="creme-brulee" type="checkbox" value="creme-brulee"
+                        name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Crème brulée
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">22€</span>
+                        <label class="select-button" for="creme-brulee">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-label">
+                    <input class="select-button" id="tiramisu" type="checkbox" value="tiramisu" name="desserts" />
+                    <div class="card-label__title">
+                        <h3>
+                            Tiramisu
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                        </h3>
+                        <p>À la noisette</p>
+                    </div>
+                    <div class="card-label__right-side">
+                        <span class="card-label__price">23€</span>
+                        <label class="select-button" for="tiramisu">
+                            <i role="img" aria-hidden="true" class="fas fa-check-circle"></i>
+                            
+                        </label>
+                    </div>
+                </div>
+            </article>
+
+            <button class="button">Commander</button>
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <h2>ohmyfood</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
