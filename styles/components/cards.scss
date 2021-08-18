@@ -105,13 +105,21 @@
       background-color: white;
     }
 
-    &__title {
-      margin-right: -3rem;
-    }
     &__title,
     &__price {
       margin: 15px 23px 16px 11px;
     }
+
+    &__title {
+      margin-right: -3rem;
+    }
+
+    &:hover {
+      .card-label__title {
+        margin-right: 0;
+      }
+    }
+
   }
 }
 

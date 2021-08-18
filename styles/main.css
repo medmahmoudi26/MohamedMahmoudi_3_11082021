@@ -276,11 +276,14 @@ body {
   z-index: 1;
   background-color: white;
 }
+.menu-select article.card .card-label__title, .menu-select article.card .card-label__price {
+  margin: 15px 23px 16px 11px;
+}
 .menu-select article.card .card-label__title {
   margin-right: -3rem;
 }
-.menu-select article.card .card-label__title, .menu-select article.card .card-label__price {
-  margin: 15px 23px 16px 11px;
+.menu-select article.card .card-label:hover .card-label__title {
+  margin-right: 0;
 }
 
 input.select-button {
